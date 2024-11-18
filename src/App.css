@@ -1,0 +1,30 @@
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Responsive grid */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.grid-item {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.3s;
+}
+
+/* Expanded styling */
+.grid-item.expanded {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure text for expanded content looks nice */
+.grid-item p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
